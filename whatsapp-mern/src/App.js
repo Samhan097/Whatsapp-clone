@@ -1,17 +1,17 @@
-import Header from "./Header";
-import SwipeButtons from "./SwipeButtons";
-import TinderCards from "./TinderCards";
+import Sidebar from "./Sidebar";
+import Chat from "./Chat";
+
+// css file
+import "./App.css";
 
 function App() {
   return (
     // BEM class naming convention
-    <div className="App">
-      {/* Header */}
-      <Header />
-      {/* TinderCards */}
-      <TinderCards />
-      {/* SwipeButtons */}
-      <SwipeButtons />
+    <div className="app">
+      <div className="app__body">
+        <Sidebar />
+        <Chat />
+      </div>
     </div>
   );
 }
